@@ -1,0 +1,17 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Live Share Updates
+  </h1>
+  <table>
+    <tr>
+      <th>Ticker</th>
+      <th>Price</th>
+    </tr>
+    <tr *ngFor="let row of marketData;let i = index;">
+      <td>{{i}}</td>
+      <td *ngFor="let c of row">{{c}}</td>
+    </tr>
+  </table>
+</div>
+
