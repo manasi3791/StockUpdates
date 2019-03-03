@@ -1,0 +1,15 @@
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    background-color: #ffeb3b3d;
+}
+table th {
+    background-color: #FF5722;
+}
+td.down {
+    color: red;
+}
+
+td.rise {
+    color: #14981a;
+}

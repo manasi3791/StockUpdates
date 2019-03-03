@@ -1,7 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { WebSocketService } from './services/web-socket.service';
-import { StockUpdateServie } from './services/stock-update.service';
 
 import { AppComponent } from './app.component';
 
@@ -12,7 +11,7 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule
   ],
-  providers: [WebSocketService, StockUpdateServie],
+  providers: [WebSocketService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

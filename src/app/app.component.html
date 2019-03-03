@@ -3,15 +3,19 @@
   <h1>
     Live Share Updates
   </h1>
-  <table>
-    <tr>
-      <th>Ticker</th>
-      <th>Price</th>
-    </tr>
-    <tr *ngFor="let row of marketData;let i = index;">
-      <td>{{i}}</td>
-      <td *ngFor="let c of row">{{c}}</td>
-    </tr>
+  <table border=1>
+    <thead>
+      <tr>
+        <th>Ticker</th>
+        <th>Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let row of marketData">
+        <td>{{ row[0] }}</td>
+        <td [ngClass]="row[2]">{{ row[1] }}</td>
+      </tr>
+    </tbody>
   </table>
 </div>
 
